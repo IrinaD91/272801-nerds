@@ -1,4 +1,4 @@
-
+/*-45*/
 @font-face { 
 	font-family: "Roboto";
 	src: url("../fonts/roboto.woff") format("woff"),
@@ -60,33 +60,59 @@ b {
 }
 
 .container {
-	width: 1180px;
+	width: 1160px;
 	margin: 0 auto;
-	padding: 0 10px;
 }
 
 .main-header {
+	background-color: #eeeeee;
 	margin-bottom: 60px;
+	padding-bottom: 70px;
 }
 
 .logo {
 	float: left;
+	display: inline-block;
 	width: 160px;
-	min-height: 70px;	
+	padding-top: 50px;
 	margin-right: 200px;
 }
 
 .main-navigation {
+	display: inline-block;
 	float: left;
-	width: 450px;
-	min-height: 70px;
-	margin-bottom: 70px;
+	margin-bottom: 87px;
+}
+
+
+.main-navigation a {
+	display: block;
+	padding-right: 48px;
+}
+
+.user-block a {
+	display: block;
+	margin-top: 75px;
+	text-align: right;
+}
+
+.main-navigation ul {
+	padding-left: 0;
+	margin-top: 75px;
+	font-size: 0;
+}
+
+.main-navigation li {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 16px;
 }
 
 .user-block {
+	display: inline-block;
 	float: right;
+	vertical-align: top;
 	width: 160px;
-	min-height: 70px;
 }
 
 .main-navigation, .user-block {
@@ -97,33 +123,79 @@ b {
 
 h1 {
 	clear: both;
-	width: 600px;
+	width: 725px;
 	margin-right: auto;
 	margin-left: auto;
-	font-size: 45px;
-	line-height: 45px;
-	color: #000000;
+	font-size: 55px;
+	line-height: 55px;
+	color: #000;
 }
 
 .slider {
-	float: left;
+	clear: both;
+	min-height: 282px;
+	/*float: left;*/
 	margin-top: 30px;
 }
+.slide, .slider * {
+	display: none;	
+}
 
-.features-item {
+.features-item {	
 	float: left;
 	width: 305px;
 	min-height: 350px;
-	margin-right: 100px;
+	margin-right: 95px;
 }
 
 .features-item:last-child {
 	margin-right: 0;
- }
+}
 
  .features {
  	margin-bottom: 80px;
- }
+ 	padding-top: 21px;
+}
+
+ .features-slogan {
+ 	display: block;
+ 	font-size: 24px;
+ 	font-weight: bold;
+ 	line-height: 30px;
+ 	padding-top: 19px;
+ 	text-transform: uppercase;
+}
+
+.features-caption {
+	color: #283136;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 24px;
+	padding: 16px 20px 20px 0;
+	margin: 0;	
+    margin-bottom: 12px;
+}
+
+.btn {
+	border-radius: 3px;
+	background-color: #fb565a;
+	color: #fff;
+	display: inline-block;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 18px;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 16px 40px;
+}
+
+.green {
+	background-color: #00ca74;
+}
+
+.yellow {
+	background-color: #efc849;
+}
 
  .filter {
 	float: left;
@@ -163,8 +235,10 @@ h1 {
 }
 
 .main-title {
-	font-size: 40px;
+	display: block;
+	font-size: 45px;
 	line-height: 45px;
+	padding-top: 80px;
 }
 
 .about-us-column:last-child {
@@ -172,15 +246,16 @@ h1 {
 	width: 370px;
 	min-height: 410px;
 	margin-right: 0;
+	padding-top: 40px;
  }
 
 .partners {
-	margin: 0 20px;
+	margin-left: 20px;
 }
 
 .partners a {
-	margin-left: 50px;
-	margin-right: 50px;
+	margin-left: 45px;
+	margin-right: 45px;
 }
 
 .partners a:first-child {
