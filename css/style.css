@@ -67,7 +67,6 @@ b {
 .main-header {
 	background-color: #eeeeee;
 	margin-bottom: 60px;
-	padding-bottom: 70px;
 }
 
 .logo {
@@ -81,7 +80,6 @@ b {
 .main-navigation {
 	display: inline-block;
 	float: left;
-	margin-bottom: 87px;
 }
 
 
@@ -121,7 +119,7 @@ b {
 	line-height: 30px;
 }
 
-h1 {
+.page-title {
 	clear: both;
 	width: 725px;
 	margin-right: auto;
@@ -129,14 +127,15 @@ h1 {
 	font-size: 55px;
 	line-height: 55px;
 	color: #000;
+	padding: 71px 0;
 }
 
 .slider {
 	clear: both;
-	min-height: 282px;
-	/*float: left;*/
-	margin-top: 30px;
+	min-height: 420px;
+	padding-top: 4px;
 }
+
 .slide, .slider * {
 	display: none;	
 }
@@ -176,57 +175,212 @@ h1 {
     margin-bottom: 12px;
 }
 
-.btn {
-	border-radius: 3px;
-	background-color: #fb565a;
-	color: #fff;
-	display: inline-block;
-	font-weight: 600;
-	font-size: 16px;
-	line-height: 18px;
-	text-decoration: none;
-	text-transform: uppercase;
-	padding: 16px 40px;
-}
-
-.green {
-	background-color: #00ca74;
-}
-
-.yellow {
-	background-color: #efc849;
-}
-
- .filter {
+.filter {
 	float: left;
 	width: 260px;
 	min-height: 780px;
 	margin-right: 140px;
 }
 
+.filter-price {
+	min-height: 205px;
+	margin-bottom: 60px
+}
+
+.filter-group {
+	margin-bottom: 31px;
+}
+
+.filter-group label {
+	font-size: 16px;
+	line-height: 20px;
+	color: #283136;
+	display: block;
+	padding-left: 37px;
+	padding-bottom: 20px;
+}
+
+.filter-title {
+	display: block;
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: bold;
+	text-transform: uppercase; 
+	padding-bottom: 22px;
+}
+
+.filter-group input {
+	display: none;
+}
+
+.filter .btn {
+	padding: 15px 86px;
+	background-color: #eee;
+	color: #000;
+}
+
+.filter .btn:hover {
+	background-color: #dfdfdf;
+}
+
+.filter .btn:active {
+	background-color: #d5d5d5;
+	box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.1);
+	opacity: .6;
+}
+
+.sort-title, .filter-title:first-child {
+	font-size: 18px;
+	line-height: 18px;
+	font-weight: bold;
+	text-transform: uppercase; 
+}
+
+.sort-title {
+	padding-right: 265px;
+}
+
+.sort-list {
+	margin-bottom: 52px;
+}
+
+.sort-list ul, .sort-list li {
+	padding-left: 0;
+	display: inline-block;
+	font-size: 0;
+	vertical-align: top;
+}
+
+.sort-list li {
+	padding-right: 25px; 
+}
+
+.sort-caption {	
+	font-size: 14px;
+	line-height: 18px;
+	color: rgba(0, 0, 0, 0.3);
+	font-weight: 600;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.sort-active {
+	color: #000;
+}
+
 .catalog {
 	float: right;
 	width: 760px;
 	min-height: 2000px;
-	margin-bottom: 40px;
+	margin-bottom: 10px;
 }
 
 .catalog-item {
 	float: left;
 	width: 360px;
 	margin-right: 40px;
-	min-height: 620px;
-	margin-bottom: 40px;
+	height: 618px;
+	margin-bottom: 35px;
 }
 
 .catalog-item:nth-child(odd) {
 	margin-right: 0;
  }
 
-.pagination {
-	clear: both;
+ .catalog-item-head {
+ 	border-radius: 3px 3px 0 0;
+ 	min-height: 40px;
+ 	background-color: #e9e9e9;
+ }
+
+.catalog-item-content a:first-child {
+	display: block;
+	color: #000;
+	font-size: 18px;
+	line-height: 45px;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 19px;
+	padding-bottom: 8px;
 }
 
+.catalog-item-content a:last-child {
+    padding: 16px 63px;
+    margin: 28px 79px;
+}
+
+.catalog-item-content p {
+	display: block;
+	text-align: center;
+	font-size: 16px;
+	line-height: 18px;
+	width: 250px;
+	margin: 0 auto;
+}
+
+.catalog-item-content {
+	display: none;
+
+}
+
+.catalog-item:hover .catalog-item-content {
+ 	display: block;
+	position: relative;
+ 	bottom: 0;
+ 	top: -236px;
+ 	min-height: 230px;
+ 	background-color: #eee;
+ }
+
+/***   ПЕРЕКЛЮЧЕНИЕ СТРАНИЦ   ***/
+.pagination {
+	clear: both;
+	float: right;
+	width: 760px;
+	margin-bottom: 60px;
+}
+
+.pagination ul {
+	font-size: 0;
+
+}
+
+.pagination li {
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 18px;
+	margin-right: 8px;
+	min-width: 50px;
+	height: 50px;
+	padding: 18px 0;
+	vertical-align: top;
+	text-align: center;
+	box-sizing: border-box;
+	background-color: #dbdbdb;
+	color: #000;
+	border-radius: 3px;
+}
+
+.pagination li:first-child {
+	border: 3px solid #dbdbdb;
+	background-color: #fff;
+	padding: 15px 0;
+}
+
+.pagination a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: inherit;
+}
+
+.pagination li:last-child {
+	padding-right: 80px; 
+	padding-left: 77px;
+}
+/***   ПЕРЕКЛЮЧЕНИЕ СТРАНИЦ   ***/
 
 .about-us-column {
 	float: left;
@@ -242,7 +396,7 @@ h1 {
 	padding-bottom: 33px;
 }
 
-.caption-about-us{
+.caption-about-us {
 	font-size: 16px;
 	line-height: 24px;
 
@@ -310,6 +464,7 @@ td {
 	margin-left: 20px;
 	display: inline-block;
 	vertical-align: middle;
+	margin-bottom: 117px;
 }
 
 .partners a {
@@ -332,7 +487,6 @@ td {
 	margin: 0 auto;
 	display: block;
 	padding-top: 55px;
-	margin-top: 118px;
 }
 
 .contacts {
@@ -366,10 +520,6 @@ td {
     margin-top: 24px;
 }
 
-footer {
-	margin-top: 60px;
-}
-
 .footer-bottom {
 	margin-top: 14px;
 }
@@ -388,6 +538,16 @@ footer {
 	height: 78px;
 	width: 78px;
 	margin-right: 11px;
+}
+
+.social-btn:hover {
+	background-color: #e74246;
+}
+
+.social-btn:active {
+	background-color: #d7373b;
+	box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.1);
+	opacity: 0.9;
 }
 
 .social-btn:last-child {
@@ -421,4 +581,80 @@ footer {
 .footer-friends p {
 	font-size: 16px;
 	line-height: 10px;
+}
+
+footer {
+	margin-bottom: 70px;
+}
+
+/***	КНОПКА   ***/
+.btn {
+	border: none;
+	border-radius: 3px;
+	background-color: #fb565a;
+	color: #fff;
+	display: inline-block;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 18px;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 16px 40px;
+}
+
+.btn:hover {
+	background-color: #e74246;
+}
+
+.btn:active {
+	background-color: #d7373b;
+	box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.1);
+	opacity: 0.9;
+}
+
+.green {
+	background-color: #00ca74;
+}
+
+.green:hover {
+	background-color: #00bc6c;
+}
+
+.green:active {
+	background-color: #00aa62;
+	box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.1);
+	opacity: 0.9;
+}
+
+.yellow {
+	background-color: #efc849;
+}
+
+.yellow:hover {
+	background-color: #eab534;
+}
+
+.yellow:active {
+	background-color: #e5a722;
+	box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.1);
+	opacity: 0.9;
+}
+/***	КНОПКА   ***/
+
+.contacts-popup {
+	position: fixed;
+    display: none;
+    width: 960px;
+    max-height: 590px;
+    top: 50%;
+    left: 50%;
+    margin-top: -205px;
+    margin-left: -490px;
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 100px;
+    box-shadow: 0 20px 40px 0 rgba(0, 1, 1, .75);
+    background: white;
+    z-index: 100;
 }
