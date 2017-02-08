@@ -207,19 +207,19 @@
 			<b class="contacts-popup-title">Напишите нам</b>
 			<a href="#" class="contacts-popup-close"></a>
 			<form class="contacts-form" action="/echo" method="post">
-				<div class="popup-row">
+				<div class="popup-row clearfix">
 					<div class="popup-part">
 						<label for="name">Ваше имя:</label>
-						<input type="text" name="name" id="name" placeholder="Name">
+						<input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
 					</div>
 					<div class="popup-part">
 						<label for="email">Ваш e-mail:</label>
-						<input type="text" name="email" id="email" placeholder="E-mail">
+						<input type="email" name="email" id="email" placeholder="Для отправки ответа">
 					</div>
 				</div>
 				<div class="popup-row">
 					<label for="message">Текст письма:</label>
-					<textarea name="message" id="message" placeholder="Message"></textarea>
+					<textarea name="message" id="message" placeholder="В свободной форме"></textarea>
 				</div>
 				<button class="btn" type="submit">Отправить</button>
 			</form>

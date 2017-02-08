@@ -77,6 +77,14 @@ b {
 	margin-right: 200px;
 }
 
+.logo:hover {
+	opacity: 0.8;
+}
+
+.logo:active {
+	opacity: 0.3;
+}
+
 .main-navigation {
 	display: inline-block;
 	float: left;
@@ -292,7 +300,12 @@ b {
  .catalog-item-head {
  	border-radius: 3px 3px 0 0;
  	min-height: 40px;
- 	background-color: #e9e9e9;
+ 	background-color: #000;
+ 	/*background-color: #e9e9e9;*/
+ }
+
+ .catalog-item:hover .catalog-item-head {
+ 	background-color: #4d4d4d;
  }
 
 .catalog-item-content a:first-child {
@@ -369,9 +382,19 @@ b {
 	vertical-align: top;
 	text-align: center;
 	box-sizing: border-box;
-	background-color: #dbdbdb;
+	background-color: #eee;
 	color: #000;
-	/*cursor: pointer;*/
+	border-radius: 3px;
+}
+
+.pagination li:hover {
+	background-color: #dfdfdf;
+}
+
+.pagination li:active {
+	background-color: #d5d5d5;
+	box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.1);
+	opacity: .6;
 }
 
 .pagination li:first-child {
@@ -484,6 +507,15 @@ td {
 .partners a {
 	margin-left: 45px;
 	margin-right: 45px;
+	opacity: 0.2;
+}
+
+.partners a:hover {
+	opacity: 1;
+}
+
+.partners a:active {
+	opacity: 0.1;
 }
 
 .partners a:first-child {
@@ -656,19 +688,128 @@ footer {
 /***	КНОПКА   ***/
 
 .contacts-popup {
-	position: fixed;
-    display: none;
-    width: 960px;
-    max-height: 590px;
+    position: fixed;
+    /*display: none;*/
+    width: 760px;
     top: 50%;
     left: 50%;
-    margin-top: -205px;
-    margin-left: -490px;
-    padding-top: 100px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 100px;
-    box-shadow: 0 20px 40px 0 rgba(0, 1, 1, .75);
+    margin-top: -300px;
+    margin-left: -481px;
+    padding-top: 67px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 85px;
+    box-shadow: 0 15px 50px 0 rgba(0, 1, 1, .75);
     background: white;
-    z-index: 100;
+    z-index: 1000;
 }
+
+.contacts-popup-title {
+	display: inline-block;
+	float: left;
+	line-height: 45px;
+	font-size: 45px;
+	margin-bottom: 40px;
+}
+
+.popup-part:first-child {
+	float: left;
+}
+
+.popup-part:last-child {
+    float: right;
+}
+
+.popup-part input {
+    width: 326px;
+}
+
+.popup-row input,
+.popup-row textarea {
+	line-height: 18px;
+	font-size: 16px;
+    padding: 14px 15px;
+    border: 2px solid #d7dcde;
+    border-radius: 4px;
+    outline: none;
+    color: #d7dcde;
+}
+
+.popup-row textarea {
+    padding-bottom: 15px;
+    width: 726px;
+    height: 85px;
+    max-width: 726px;
+    max-height: 85px;
+
+}
+
+.popup-row input:hover,
+.popup-row textarea:hover {
+    border: 2px solid #b4b9bb;
+    border-radius: 4px;
+    color: #b4b9bb;
+}
+
+.popup-row input:focus,
+.popup-row textarea:focus {
+    border: 2px solid #000;
+    border-radius: 4px;
+    color: #000;
+}
+
+.popup-row input:invalid,
+.popup-row textarea:invalid {
+    border: 2px solid #e74246;
+    border-radius: 4px;
+    color: #e74246;
+}
+
+.contacts-form label {
+	display: block;
+    margin-bottom: 11px;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: bold;
+}
+
+.popup-row {
+    margin-bottom: 33px;
+}
+
+.popup-row:last-child {
+	margin-bottom: 0;
+}
+
+
+.contacts-form .btn {
+	margin-top: 9px;
+	padding: 15px 81px;
+    float: left;
+}
+
+
+.contacts-popup-close {
+    display: block;
+    float: right;
+    margin-right: -20px;
+    margin-top: 3px;
+    width: 40px;
+    height: 40px;
+    background: url("../img/close-cross.png") no-repeat center;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.contacts-form {
+	clear: both;
+}
+
+.contacts-popup-close:hover{
+	opacity: 0.3;
+}
+
+.contacts-popup-close:active{
+	opacity: 0.1;
+}
+
