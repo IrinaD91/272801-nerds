@@ -477,7 +477,7 @@ b {
 	left: 1px;
 	background-image: url("../img/sprite.png");
 	background-repeat: no-repeat;
-	width: 25px;
+	width: 28px;
 	height: 25px;
 	opacity: 0.4;
 }
@@ -1202,6 +1202,7 @@ footer {
 }
 
 .contacts-form .btn {
+	cursor: pointer;
 	margin-top: 9px;
 	padding: 15px 81px;
 	float: left;
