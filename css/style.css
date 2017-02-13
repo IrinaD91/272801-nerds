@@ -31,6 +31,7 @@ html, body {
 body {
 	font-family: "Roboto", Arial, sans-serif; 
 	font-size: 14px;
+	min-width: 1160px;
 	line-height: 1.5;
 	font-weight: normal;
 	background: #fff;
@@ -385,7 +386,7 @@ b {
 }
 
 .price-controls input {
-	font-family: 'Roboto', sans-serif;
+	font-family:"Roboto", sans-serif;
 	font-size: 16px;
 	font-weight: 300;
 	font-style: normal;
