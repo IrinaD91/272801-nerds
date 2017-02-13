@@ -29,7 +29,7 @@ html, body {
 }
 
 body {
-	font-family: "Roboto", Arial, sans-serif; 
+	font-family: "Roboto", "Arial", sans-serif; 
 	font-size: 14px;
 	min-width: 1160px;
 	line-height: 1.5;
@@ -72,6 +72,7 @@ b {
 .logo {
 	float: left;
 	display: inline-block;
+	vertical-align: middle;
 	width: 160px;
 	padding-top: 50px;
 	margin-right: 200px;
@@ -87,14 +88,25 @@ b {
 
 .main-navigation {
 	display: inline-block;
+	vertical-align: middle;
 	float: left;
 }
 
 
 .main-navigation a {
 	display: block;
+	color: #000000;
 	margin-right: 48px;
 	padding-bottom: 3px;
+}
+
+.main-navigation a:hover {
+	color: #fb565a;
+}
+
+.main-navigation a:active {
+	color: #000000;
+	opacity: 0.3;
 }
 
 .main-navigation ul {
@@ -111,6 +123,8 @@ b {
 
 .main-navigation .current {
 	border-bottom: 2px solid #fb565a;
+	cursor: default;
+    pointer-events: none;
 }
 
 .main-navigation, .user-block {
@@ -150,7 +164,6 @@ b {
 	vertical-align: top;
 	font-size: 16px;
 	line-height: 30px;
-	font-family: "Roboto", "Arial", sans-serif;
 	text-transform: uppercase;
 	color: #000000;
 	text-decoration: none;
@@ -255,7 +268,6 @@ b {
 	font-weight: 500;
 	font-size: 55px;
 	line-height: 55px;
-	font-family: "Roboto", "Arial", sans-serif;
 	color: #000000;
 }
 
@@ -377,6 +389,7 @@ b {
 .price-controls label {
 	font-size: 16px;
 	display: inline-block;
+	vertical-align: middle;
 	width: 50%;
 	text-transform: uppercase;
 }
@@ -386,7 +399,6 @@ b {
 }
 
 .price-controls input {
-	font-family:"Roboto", sans-serif;
 	font-size: 16px;
 	font-weight: 300;
 	font-style: normal;
@@ -589,24 +601,29 @@ b {
 
 .arrows {
 	display: inline-block;
+	vertical-align: middle;
 }
 
 .arrow-down {
 	display: inline-block;
+	vertical-align: middle;
 	margin-left: 21px;
 	border-style: inset;
 	border-width: 10px 5px 0 5px;
 	border-color: rgba(0, 0, 0, 0.2) transparent transparent transparent;
 	-webkit-transform:rotate(360deg);
+	        transform:rotate(360deg);
 }
 
 .arrow-up {
 	display: inline-block;
+	vertical-align: middle;
 	margin-left: 15px;
 	border-style: inset;
 	border-width: 0 5px 10px 5px;
 	border-color: transparent transparent rgba(0, 0, 0, 0.2) transparent;
 	-webkit-transform:rotate(360deg);
+	        transform:rotate(360deg);
 }
 
 .arrow-down:hover {
@@ -852,7 +869,7 @@ th {
 	font-size: 45px;
 	line-height: 10px;
 	padding-right: 14px;
-	padding-bottom: 34px;
+	padding-bottom: 36px;
 }
 
 th sup {
@@ -862,6 +879,7 @@ th sup {
 td {
 	font-size: 16px;
 	line-height: 18px;
+	vertical-align: top;
 }
 
 .about-us {
@@ -958,6 +976,7 @@ td {
 
 .contacts b {
 	display: inline-block;
+	vertical-align: middle;
 	font-size: 18px;
 	line-height: 30px;
 	padding: 9px;
@@ -965,6 +984,7 @@ td {
 
 .contacts span {
 	display: inline-block;
+	vertical-align: middle;
 	font-size: 16px;
 	line-height: 18px;
 	color: #666666;
@@ -990,6 +1010,7 @@ td {
 
 .social-btn {
 	background-color: #e1e1e1;
+	vertical-align: middle;
 	border-radius: 50px;
 	display: inline-block;
 	height: 78px;
@@ -1051,6 +1072,7 @@ footer {
 	background-color: #fb565a;
 	color: #fff;
 	display: inline-block;
+	vertical-align: middle;
 	font-weight: 600;
 	font-size: 16px;
 	line-height: 18px;
@@ -1126,6 +1148,7 @@ footer {
 
 .contacts-popup-title {
 	display: inline-block;
+	vertical-align: middle;
 	float: left;
 	line-height: 45px;
 	font-size: 45px;
@@ -1239,29 +1262,70 @@ footer {
 
 /* Всплывающая форма */
 
-@keyframes bounce {
+@-webkit-keyframes bounce {
   0%   {
-    transform: translateY(-2000px);
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
   }
   70%  {
-    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
   }
   90%  {
-    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
   }
   100% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%   {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
+  }
+  70%  {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  90%  {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes shake {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
   }
 }
 
 @keyframes shake {
   0%, 100% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   10%, 30%, 50%, 70%, 90% {
-    transform: translateX(-10px);
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
   }
   20%, 40%, 60%, 80% {
-    transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
   }
 }
